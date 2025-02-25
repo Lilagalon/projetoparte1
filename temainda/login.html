@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check list</title>
+
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <fieldset>
+                <legend>dados do produto</legend>
+                <label>
+                   produto <input type="text">
+                </label>
+                <label>
+                    quantidade <input type="number" required>
+                </label>
+            
+            </fieldset>
+            
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar campos">
+        <button type="button" id="voltarLogin">Voltar para tela de Login</button>
+    </form>
+    <script>
+        document.getElementById("voltarLogin").addEventListener("click", function() {
+            window.location.href = "index.html"; 
+        });
+    </script>
+</body>
+</html>
+
